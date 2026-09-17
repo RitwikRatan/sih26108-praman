@@ -1,0 +1,14 @@
+{
+  "name": "sih26108-standards-ai",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite frontend --port 5173 --host",
+    "build": "vite build frontend",
+    "preview": "vite preview frontend"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

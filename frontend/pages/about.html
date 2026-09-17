@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — PRAMAN</title>
+  <meta name="description" content="About PRAMAN - Indian Procurement Standards Platform based on SIH26108.">
+  <link rel="icon" type="image/svg+xml" href="/assets/brand/praman-mark.svg">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/typography.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <div id="navbar-root"></div>
+
+  <section style="padding: 4rem 0 2.5rem 0; background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color);">
+    <div class="container" style="max-width: 900px; text-align: center;">
+      <span class="badge badge-primary mb-2" style="font-weight: 700;">PROCUREMENT STANDARDS PLATFORM</span>
+      <h1 class="page-title" style="font-size: 2.25rem; font-weight: 900; margin-bottom: 1rem;">
+        About PRAMAN
+      </h1>
+      <p class="page-subtitle" style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.6;">
+        Find the Right Standard. Make the Right Decision.
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem & Vision -->
+  <section style="padding: 4rem 0; background: white;">
+    <div class="container" style="max-width: 900px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+        <div class="card" style="background: var(--bg-main); padding: 1.75rem; border: 1px solid var(--border-color);">
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.75rem;">The Challenge</h2>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65;">
+            Procurement officers frequently encounter complex technical specifications across diverse domains. Identifying applicable Indian Standards (IS), verifying active versions, and checking specification completeness manually is time-consuming.
+          </p>
+        </div>
+
+        <div class="card" style="background: var(--bg-main); padding: 1.75rem; border: 1px solid var(--border-color);">
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--indian-green); margin-bottom: 0.75rem;">Our Solution</h2>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65;">
+            PRAMAN processes raw text requirements or uploaded tender PDFs, extracts key parameters, matches them against the Indian Standards catalog using explainable logic, identifies allied standards, and generates procurement readiness reports.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: var(--surface-white); border-top: 1px solid var(--border-color); padding: 3rem 0 2rem 0;">
+    <div class="container" style="text-align: center; font-size: 0.875rem; color: var(--text-secondary);">
+      <img src="/assets/brand/praman-logo.svg" alt="PRAMAN" height="34" style="margin-bottom: 0.75rem;" /><br>
+      © PRAMAN — Indian Procurement Standards Platform
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module">
+    import { renderPublicNavbar } from '/js/components/navbar.js';
+    document.getElementById('navbar-root').innerHTML = renderPublicNavbar('/pages/about.html');
+  </script>
+</body>
+</html>
