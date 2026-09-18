@@ -137,3 +137,42 @@ body.app-page,
   border-image: linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #138808 100%) 1;
 }
 
+/* Global Google Translate UI Overrides */
+.goog-te-gadget {
+  font-size: 0 !important;
+  color: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.goog-te-gadget .goog-logo-link, .goog-te-gadget span {
+  display: none !important;
+}
+.goog-te-combo {
+  background: var(--bg-main, #F7F9FC) !important;
+  border: 1px solid var(--border-color, #E3E8EF) !important;
+  border-radius: var(--radius-md, 8px) !important;
+  padding: 0.35rem 0.6rem !important;
+  font-size: var(--fs-sm, 0.875rem) !important;
+  font-weight: 600 !important;
+  color: var(--text-primary, #16324F) !important;
+  cursor: pointer !important;
+  outline: none !important;
+  margin: 0 !important;
+  height: 38px !important;
+}
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none !important;
+  visibility: hidden !important;
+}
+html, body {
+  top: 0px !important;
+  position: static !important;
+}
+#goog-gt-tt {
+  display: none !important;
+}
+
+

@@ -22,7 +22,7 @@ function initGoogleTranslate() {
   window.googleTranslateElementInit = function() {
     new google.translate.TranslateElement({
       pageLanguage: 'en',
-      includedLanguages: 'hi,bn,ta,te,mr,pa,gu,kn,ml',
+      includedLanguages: 'en,hi,bn,ta,te,mr,pa,gu,kn,ml',
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE
     }, 'google_translate_element');
   };

@@ -72,28 +72,28 @@ export function initChatbot() {
     msgDiv.style.alignSelf = isUser ? 'flex-end' : 'flex-start';
     msgDiv.style.maxWidth = '85%';
     
-    let contentHtml = \`
-      <div style="background: \${isUser ? 'var(--primary-blue)' : 'var(--surface-hover)'}; 
-                  color: \${isUser ? 'white' : 'var(--text-primary)'}; 
-                  border: \${isUser ? 'none' : '1px solid var(--border-color)'}; 
+    let contentHtml = `
+      <div style="background: ${isUser ? 'var(--primary-blue)' : 'var(--surface-hover)'}; 
+                  color: ${isUser ? 'white' : 'var(--text-primary)'}; 
+                  border: ${isUser ? 'none' : '1px solid var(--border-color)'}; 
                   padding: 10px 14px; 
                   border-radius: 12px; 
-                  border-bottom-\${isUser ? 'right' : 'left'}-radius: 2px; 
+                  border-bottom-${isUser ? 'right' : 'left'}-radius: 2px; 
                   font-size: 0.85rem; 
                   line-height: 1.4;">
-        \${text}
+        ${text}
       </div>
-    \`;
+    `;
 
     if (citations && citations.length > 0) {
       contentHtml += '<div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px; width: 100%;">';
       citations.forEach(cit => {
-        contentHtml += \`
+        contentHtml += `
           <div style="background: var(--primary-blue-light); border: 1px solid rgba(11, 92, 173, 0.2); padding: 8px; border-radius: 6px; font-size: 0.75rem;">
-            <div style="color: var(--primary-blue); font-weight: 700; margin-bottom: 4px;">\${cit.is_number} (\${cit.source})</div>
-            <div style="color: var(--text-secondary); font-style: italic;">"\${cit.text.substring(0, 100)}..."</div>
+            <div style="color: var(--primary-blue); font-weight: 700; margin-bottom: 4px;">${cit.is_number} (${cit.source})</div>
+            <div style="color: var(--text-secondary); font-style: italic;">"${cit.text.substring(0, 100)}..."</div>
           </div>
-        \`;
+        `;
       });
       contentHtml += '</div>';
     }
